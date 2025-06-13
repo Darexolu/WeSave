@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WeSave</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WeSave.styles.css" asp-append-version="true" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+				<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #0E0F0C; font-size: 36.46px;">WeSave</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+					<ul class="navbar-nav ms-auto " style="margin-right: 42rem;flex-grow-1;>
+                        <li class="nav-item">
+							<a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" style="color:#163300; font-size: 20px; font-weight: 600;">Home</a>
+                        </li>
+                        <li class="nav-item">
+							<a class="nav-link" style="color:#163300; font-size: 20px; font-weight: 600;" asp-area="" asp-controller="AboutUs" asp-action="About">About Us</a>
+                        </li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-controller="Features" asp-action="Features" style="color:#163300; font-size: 20px; font-weight: 600;">Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-controller="ContactUs" asp-action="Contact" style="color:#163300; font-size: 20px; font-weight: 600;">Contact Us</a>
+						</li>
+						@* <li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+						</li> *@
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+	<div class="container-fluid hero-section1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h1 class=" mt-5" style="color: #013232; font-size: 90px; line-height: 80px; letter-spacing: -1px; margin-left: 90px; vertical-align: middle; font-weight: 900;">
+                    Digital Group<br>Savings,Made<br>Easy
+                </h1>
+					<p style="font-size: 20px; color: #013232; line-height: 32px; letter-spacing: 0px; margin-left: 92px; font-weight: 500; margin-top: 25px; margin-bottom: 100px;">Save smarter, together! Automate your contributions, track<br> savings with full transparency, and enjoy secure financial<br> management for Ajo, Esusu, or thrift savings groups.</p>
+
+					<!-- Button -->
+					<div class="d-flex justify-content-start justify-content-md-start mt-4">
+					<a href="#" class="btn" style="background-color: #0AB70A; color: black; border-radius: 30px; padding: 12px 32px; font-weight: 600; font-size: 16px; margin-left: 92px;">
+						Join Wait List
+					</a>
+					</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - WeSave - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
