@@ -25,10 +25,11 @@ body {
 	background-image: url('/images/Hero Section background.png'); /* Replace with your actual image path */
 	background-size: cover;
 	background-position: center;
-	height: 600px; /* Adjust height as needed */
+	height: 1000px; /* Adjust height as needed */
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: white;
+	
 }
