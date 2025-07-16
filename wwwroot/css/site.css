@@ -22,7 +22,7 @@ body {
   font-family: 'Inter', sans-serif;
 }
 .hero-section1 {
-	background-image: url('/images/Hero Section background.png'); /* Replace with your actual image path */
+	background-image: url('/images/Hero Section background new.png');
 	background-size: cover;
 	background-position: center;
 	height: 1000px; /* Adjust height as needed */
@@ -31,5 +31,4 @@ body {
 	align-items: center;
 	justify-content: center;
 	color: white;
-	
 }
