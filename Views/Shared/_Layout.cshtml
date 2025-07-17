@@ -11,36 +11,33 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-				<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #0E0F0C; font-size: 36.46px;">WeSave</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-					<ul class="navbar-nav ms-auto " style="margin-right: 42rem;flex-grow-1;>
-                        <li class="nav-item">
-							<a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" style="color:#163300; font-size: 20px; font-weight: 600;">Home</a>
-                        </li>
-                        <li class="nav-item">
-							<a class="nav-link" style="color:#163300; font-size: 20px; font-weight: 600;" asp-area="" asp-controller="AboutUs" asp-action="About">About Us</a>
-                        </li>
+	<header>
+		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+			<div class="container-fluid">
+				<a class="navbar-brand wesave-brand" asp-area="" asp-controller="Home" asp-action="Index">WeSave</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+					<ul class="navbar-nav ms-auto nav-links-container">
 						<li class="nav-item">
-							<a class="nav-link text-dark" asp-area="" asp-controller="Features" asp-action="Features" style="color:#163300; font-size: 20px; font-weight: 600;">Features</a>
+							<a class="nav-link nav-link-custom" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-dark" asp-area="" asp-controller="ContactUs" asp-action="Contact" style="color:#163300; font-size: 20px; font-weight: 600;">Contact Us</a>
+							<a class="nav-link nav-link-custom" asp-area="" asp-controller="AboutUs" asp-action="About">About Us</a>
 						</li>
-						@* <li class="nav-item">
-							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-						</li> *@
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+						<li class="nav-item">
+							<a class="nav-link nav-link-custom text-dark" asp-area="" asp-controller="Features" asp-action="Features">Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-custom text-dark" asp-area="" asp-controller="ContactUs" asp-action="Contact">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
     <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
