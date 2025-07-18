@@ -353,6 +353,9 @@ body {
 	display: block;
 	margin: 0 auto;
 }
+.hero-section4-title.green {
+	color: #0AB70A;
+}
 
 @media (min-width: 992px) {
 	.hero-section4 .row {
@@ -366,4 +369,147 @@ body {
 		text-align: left;
 	}
 }
+//*/section5*/
+.secured-saving-section {
+	position: relative;
+	max-width: 1000px;
+	margin: 250px auto 120px auto;
+	padding: 0 20px;
+}
 
+.secured-vault-image {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 300px;
+	height: auto;
+	z-index: 2;
+	margin-top: -10px;
+	
+}
+
+.secured-content-box {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	background-color: #013232;
+	border-radius: 60px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	position: relative;
+	z-index: 1;
+	padding: 350px 20px;
+
+}
+
+.secured-heading {
+	color: #FFFFFF;
+	font-size: 70px;
+	letter-spacing: -1.36px;
+	margin-bottom: 20px;
+}
+
+.secured-paragraph {
+	color: #7A7B7A;
+	font-size: 20px;
+	max-width: 800px;
+}
+
+.secured-btn-wrapper {
+	margin-top: 24px;
+}
+
+.secured-btn {
+	background-color: #0AB70A;
+	color: black;
+	border-radius: 30px;
+	padding: 12px 32px;
+	font-weight: 600;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.secured-heading {
+		font-size: 40px;
+	}
+
+	.secured-paragraph {
+		font-size: 16px;
+	}
+
+	.secured-content-box {
+		height: auto;
+		padding: 60px 20px;
+	}
+
+	.secured-vault-image {
+		width: 200px;
+		top: -60px;
+	}
+}
+/*//*/
+
+.vault-info-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 150px;
+	padding: 30px 0;
+	margin-top: 60px;
+	flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+.vault-info-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 10px 0;
+	flex: 1 1 300px; /* allows flexibility and wrapping */
+	justify-content: center;
+	text-align: center;
+}
+
+.vault-info-icon {
+	color: #0AB70A;
+}
+
+.vault-info-text {
+	font-size: 16px;
+	color: #013232;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+	.vault-info-container {
+		gap: 50px;
+	}
+
+	.vault-info-text {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.vault-info-container {
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.vault-info-item {
+		flex-direction: row;
+		justify-content:center;
+		padding: 0 20px;
+	}
+
+	.vault-info-text {
+		font-size: 14px;
+	}
+}
+
+
+
+/*//*/
